@@ -1,18 +1,13 @@
 import React from "react";
-import Bi from "../Components/Img/odorBiMini.svg";
+import Bi from "./Img/odorBiMini.svg";
 
 
-export default function LCD(){
+export default function Lcd(){
     
     return (
-
             <div className="container1">
-                <div className="header">
-                    <h1>에코뷰 LCD</h1>
-                </div>
-            
                 <div className="EcoViewLcd">
-                    <div>
+                    <div className="EcoViewBI">
                         <img style={{ marginTop: '30px' }} src={Bi} alt="로고" />
                     </div>
                     <div className="EcoList">
