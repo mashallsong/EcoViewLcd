@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import SideNav from "./Components/SideNav";
+import Lcd from "./Pages/Lcd";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="root-wrap">
+      <BrowserRouter>
+        <SideNav />
+            <Routes>
+                <Route path="/" element={<Lcd />} />
+                <Route path="/Lcd" element={<Lcd />} />
+            </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+ 

@@ -1,13 +1,187 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'reset.css';
+
+:root {
+  /* font */
+  --fontH1 : 5rem;
+  --fontH3 : 2rem;
+  --fontXl:3rem;
+  --fontL:1.5rem;
+  --fontM:1rem;
+  --fontS:0.5rem;
+  --fontXs:0.3rem;
+  --fontNumber:8rem;
+  --fontNumber2:7rem;
+
+  /* color */
+  --bodyBgColor: #f4f5fe;
+  --sideNavBgColor: #0c0c0c;
+  --mainColor: #4E82EB;
+  --purple_color: #7829fa;
+  --white_color: white;
+  --white_color_hover: rgb(174, 255, 1);
+
+  /* psdding */
+  --text_padding_s: 0.5rem;
+  --text_padding_m: 1rem;
+  --text_padding_l: 1.5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  text-decoration: none;
+}
+
+/* 중요 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+button,
+button:focus {
+border: none;
+cursor: pointer;
+outline: none;
+}
+
+
+/* CSS Start */
+.root-wrap {
+  display: flex;
+}
+
+body {
+  background-color: var(--bodyBgColor);
+}
+
+h1 {
+  font-size: var(--fontH1);
+}
+
+/* 헤더 */
+.header {
+  margin: 16px 0;
+}
+
+/* 사이드메뉴 */
+.sidenav-container {
+  background-color: var(--sideNavBgColor);
+  padding: 0px 16px;
+  max-width: 320px;
+  min-width: 320px;
+  height: 100vh;
+}
+
+.sidenavList {
+  text-align: center;
+}
+
+.navMenuBtn {
+  padding: 24px 80px;
+  background-color: var(--mainColor);
+  color: var(--white_color);
+  text-decoration: none;
+  font-size: var(--fontL);
+  border-radius: 16px;
+}
+
+.navMenuBtn > span {
+  margin-left: 8px;
+}
+
+.navMeunBtnWrap {
+  margin: 64px 0 32px 0;
+}
+
+
+/* 에코뷰 LCD */
+.container1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.EcoViewLcd {
+  background-color: #001538;
+  width: 768px;
+  height: 1024px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.EcoList {
+  width: 100%;
+}
+
+.EcoList ul li {
+  color: var(--white_color);
+  height: 214px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 64px;
+  box-shadow: 0 16px 6px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 10px;
+}
+
+.EcoList ul {
+  padding: 16px 16px;
+}
+
+.Listwrap1 {
+  background-color: #1E4E97;
+}
+
+.Listwrap2 {
+  background-color: #89001F;
+}
+
+.Listwrap3{
+  background-color: #009C86;
+}
+
+.Listwrap4{
+  background-color: #90A026;
+}
+
+.ListText1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ListTitle {
+  font-size: var(--fontXl);
+  padding-left: 20px;
+}
+
+.ListNumber1 {
+  font-size: var(--fontNumber);
+  font-weight: 900;
+  text-shadow: 0 12px 12px rgba(0, 0, 0, 0.16);
+  padding-right: 12px;
+}
+
+.ListNumber2 {
+  font-size: var(--fontNumber2);
+  font-weight: 900;
+  text-shadow: 0 12px 12px rgba(0, 0, 0, 0.16);
+  padding-right: 12px;
+}
+
+.ListSymbol {
+  font-size: var(--fontXl);
 }
